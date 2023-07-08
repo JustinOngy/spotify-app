@@ -4,22 +4,27 @@ import { TbPlaylist } from "react-icons/tb";
 import { AiOutlinePlus } from "react-icons/ai";
 
 // import { Song } from "@/types";
-// import useUploadModal from "@/hooks/useUploadModal";
 import { useUser } from "@/hooks/useUser";
 // import useSubscribeModal from "@/hooks/useSubscribeModal";
 // import useOnPlay from "@/hooks/useOnPlay";
 import MediaItem from "./MediaItem";
 import useAuthModal from "@/hooks/useAuthModal";
+import UploadModal from "./UploadModal";
+import useUploadModal from "@/hooks/useUploadModal";
 
 const Library = () => {
   const authModal = useAuthModal();
+  const uploadModal = useUploadModal();
   const { user } = useUser();
 
   const onClick = () => {
     if (!user) {
       return authModal.onOpen();
     }
+
+    return uploadModal.onOpen();
   };
+
   return (
     <div className="flex flex-col">
       <div className="flex items-center justify-between px-5 pt-4">
