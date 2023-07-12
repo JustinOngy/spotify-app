@@ -14,7 +14,7 @@ import Slider from "./Slider";
 import { Song } from "@/types";
 
 interface PlayerContentProps {
-  song: Song[];
+  song: Song;
   songUrl: string;
 }
 
