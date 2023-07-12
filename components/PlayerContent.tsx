@@ -112,7 +112,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
           className="text-neutral-400 cursor-pointer hover:text-white transition"
         />
         <div
-          // onClick={handlePlay}
+          onClick={handlePlay}
           className="flex items-center justify-center h-10 w-10 rounded-full bg-white p-1 cursor-pointer">
           <Icon size={30} className="text-black" />
         </div>
