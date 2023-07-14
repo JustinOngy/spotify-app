@@ -32,7 +32,7 @@ const AuthModal = () => {
   return (
     <Modal
       title="Welcome Back"
-      description="Login in to your account"
+      description="Login in to your account test : demo@gmail password"
       isOpen={isOpen}
       onChange={onChange}>
       <Auth
