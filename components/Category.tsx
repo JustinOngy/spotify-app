@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import NextImage from "next/image";
 
 interface CategoryProps {
   title: string;
@@ -46,7 +47,7 @@ const Category: React.FC<CategoryProps> = ({ title, color, categoryImage }) => {
             <p className="absolute top-5 left-5 font-semibold text-2xl z-[1] ">
               {title}
             </p>
-            <img
+            <NextImage
               src={`/images/${categoryImage}.jpeg`}
               alt="category image"
               className="w-[100px] h-[100px] absolute bottom-1 right-0 transform rotate-12 md:w-[150px] md:h-[150px] "
