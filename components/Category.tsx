@@ -51,6 +51,8 @@ const Category: React.FC<CategoryProps> = ({ title, color, categoryImage }) => {
               src={`/images/${categoryImage}.jpeg`}
               alt="category image"
               className="w-[100px] h-[100px] absolute bottom-1 right-0 transform rotate-12 md:w-[150px] md:h-[150px] "
+              width={150}
+              height={150}
             />
           </div>
         </div>
